@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,7 +10,7 @@
 <body>
 
 
-<%
+	<%
 String msg;
 msg = request.getAttribute("status").toString();
 String status =(String) request.getAttribute("status").toString();
@@ -25,7 +25,7 @@ String url =(String) request.getAttribute("url").toString();
 %>
 
 
-<script>
+	<script>
 
 function call()
 {
@@ -34,20 +34,20 @@ function call()
 }
 
 </script>
-<h1>Callback Called</h1>
+	<h1>Callback Called</h1>
 
-<input type="text" name="msg" id="msg" value="<%=msg%>" />
+	<input type="text" name="msg" id="msg" value="<%=msg%>" />
 
-<input type="text" name="id" id="id" value="<%=id%>" />
-<input type="text" name="event" id="event" value="<%=event%>" />
-<input type="text" name="name" id="name" value="<%=name%>" />
-
-
-<input type="text" name="url" id="url" value="<%=url%>" />
+	<input type="text" name="id" id="id" value="<%=id%>" />
+	<input type="text" name="event" id="event" value="<%=event%>" />
+	<input type="text" name="name" id="name" value="<%=name%>" />
 
 
-<button type="button" name="videolink" id="videolink" 
-	onclick= "call()">Click to see video</button>
+	<input type="text" name="url" id="url" value="<%=url%>" />
+
+
+	<button type="button" name="videolink" id="videolink" onclick="call()">Click
+		to see video</button>
 
 </body>
 </html>

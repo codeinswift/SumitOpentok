@@ -100,18 +100,18 @@ if(request.getAttribute("apiSecret")!=null)
 			name="archiveId" id="archiveId" value="" />
 
 
-		<button type="button" name="Archive" id="archive" 
-			onclick="this.disabled=true;document.getElementById('pub').disabled=true;document.getElementById('stoppub').disabled=true;document.getElementById('stoparchive').disabled=false;publish('<%=apikey%>','<%=sessionID%>','<%=token%>','<%=apiSecret%>','Archive')"disabled>Start
-			Archive</button>
-		<button type="button" name="Publish" id="pub" 
+		<button type="button" name="Archive" id="archive"
+			onclick="this.disabled=true;document.getElementById('pub').disabled=true;document.getElementById('stoppub').disabled=true;document.getElementById('stoparchive').disabled=false;publish('<%=apikey%>','<%=sessionID%>','<%=token%>','<%=apiSecret%>','Archive')"
+			disabled>Start Archive</button>
+		<button type="button" name="Publish" id="pub"
 			onclick="this.disabled=true;document.getElementById('archive').disabled=false;document.getElementById('stoppub').disabled=false;document.getElementById('stoparchive').disabled=true;publish('<%=apikey%>','<%=sessionID%>','<%=token%>','<%=apiSecret%>','Publish')">Start
 			Publish</button>
-		<button type="button" name="Stop" id="stoparchive" 
-			onclick="this.disabled=true;document.getElementById('archive').disabled=false;document.getElementById('stoppub').disabled=false;document.getElementById('pub').disabled=true;publish('<%=apikey%>','<%=sessionID%>','<%=token%>','<%=apiSecret%>','Stop')"disabled>Stop
-			Archive</button>
+		<button type="button" name="Stop" id="stoparchive"
+			onclick="this.disabled=true;document.getElementById('archive').disabled=false;document.getElementById('stoppub').disabled=false;document.getElementById('pub').disabled=true;publish('<%=apikey%>','<%=sessionID%>','<%=token%>','<%=apiSecret%>','Stop')"
+			disabled>Stop Archive</button>
 		<button type="button" name="Stoppub" id="stoppub"
-			onclick="this.disabled=true;document.getElementById('pub').disabled=false;document.getElementById('archive').disabled=true;document.getElementById('stoparchive').disabled=true;publish('<%=apikey%>','<%=sessionID%>','<%=token%>','<%=apiSecret%>','Stoppub')"disabled>Stop
-			publish</button>
+			onclick="this.disabled=true;document.getElementById('pub').disabled=false;document.getElementById('archive').disabled=true;document.getElementById('stoparchive').disabled=true;publish('<%=apikey%>','<%=sessionID%>','<%=token%>','<%=apiSecret%>','Stoppub')"
+			disabled>Stop publish</button>
 
 		<%-- <a href="javascript: publish('<%=apikey%>','<%=sessionID%>','<%=token%>','Publish')" >Publish</a> --%>
 		<div id="camera"></div>

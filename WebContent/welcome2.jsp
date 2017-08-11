@@ -9,7 +9,7 @@
 <script type=text/javascript src="jquery-1.11.3.min.js"></script>
 
 </head>
-<body background="wallfirst.jpg" >
+<body background="wallfirst.jpg">
 	<h1>Welcome to Tokbox</h1>
 	<h2>Click on the button below to connect to a session</h2>
 	<form action="Welcome">
